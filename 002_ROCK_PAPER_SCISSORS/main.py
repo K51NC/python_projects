@@ -1,6 +1,8 @@
+from art import title
 import random
 import art
 
+print(f"{title}\n")
 print("Welcome to RPS!")
 
 userPick = input("Select (r)ock, (p)aper, or (s)cissors: ").lower()

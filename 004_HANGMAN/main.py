@@ -13,7 +13,8 @@ userQuit = False
 for x in range(0, len(word)):
     wordBoard += "_"
 
-print(f"Welcome to Hangman!\n\nYour word has been selected. Time to begin!\n")
+print(f"{art.title}\n")
+input(f"Welcome to Hangman!\n\nYour word has been selected. Press the 'enter' key to begin!\n")
 
 def guess(letter):
     if letter in used:

@@ -1,3 +1,7 @@
+from art import title
+
+
+print(f"{title}\n")
 print("Welcome to the tip calculator.")
 bill = float((input("What was the total bill? $")))
 partySize = int(input("How many people to split the bill? "))
