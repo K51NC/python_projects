@@ -1,16 +1,19 @@
 import os
 import random
 import art
+import words
 
-wordList = ["alpha", "bravo", "charlie", "delta", "echo"]
+word = random.choice(words.list)
+wordBoard = []
+used = []
 livesRemaining = 6
 gameRunning = True
 userQuit = False
-word = random.choice(wordList)
-wordBoard = []
-wordString = ""
-used = []
-usedLetters = ""
+
+for x in range(0, len(word)):
+    wordBoard += "_"
+
+print(f"Welcome to Hangman!\n\nYour word has been selected. Time to begin!\n")
 
 def guess(letter):
     if letter in used:
@@ -25,7 +28,6 @@ def guess(letter):
             contains = True
     if contains == False:
         livesRemaining -= 1
-    return contains
 
 def isComplete():
     complete = True
@@ -35,7 +37,7 @@ def isComplete():
     return complete
 
 def printBoard():
-    print(wordString.join(wordBoard))
+    print(" ".join(wordBoard))
     print(art.board[livesRemaining])
     print(f"Lives remaining: {livesRemaining}")
 
@@ -46,17 +48,12 @@ def addLetter(letter):
 def getGuess():
     char = input("Guess a letter or type 'quit' to quit the game: ").lower()
     return char
-
-for x in range(0, len(word)):
-    wordBoard += "_"
-
         
-print(f"Welcome to Hangman!\n\nYour word has been selected. Time to begin!\n")
 
 while gameRunning == True and livesRemaining > 0:
 
     printBoard()
-    print(f"Letters you have already used: {usedLetters.join(sorted(used))}")
+    print(f"Letters you have already used: {" ".join(sorted(used))}\n")
     charGuess = getGuess()
     os.system('cls')
 
@@ -72,7 +69,6 @@ while gameRunning == True and livesRemaining > 0:
     
     if isComplete() == True:
         gameRunning = False
-    
 
 
 if userQuit == True:

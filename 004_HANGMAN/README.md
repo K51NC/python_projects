@@ -7,5 +7,7 @@ Initial code commit. Udemy 100 days of code. Practice with:
 - functions
 - while loops
 
-For later:
-- refactor
+2-24-2024
+
+- Minor changes to code, such as removing dead code and UI improvements
+- Replaced sample word list with new word list in words.py
