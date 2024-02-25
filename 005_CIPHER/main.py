@@ -6,6 +6,12 @@ alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 running = True
 print("Welcome to the Caesar Cipher!\n")
 
+def clear():
+    if os.name == 'nt':
+        os.system("cls")
+    else:
+        os.system("clear")
+        
 def encode(word, shift):
     encodedWord = ""
     for char in word:
@@ -68,5 +74,5 @@ while running:
         else:
             print("You have typed something I am not familiar with. Please type 'y' for yes or 'n' for no.")
 
-os.system("cls")
+clear()
 print("Goodbye!")

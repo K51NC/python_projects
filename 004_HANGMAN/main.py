@@ -16,6 +16,12 @@ for x in range(0, len(word)):
 print(f"{art.title}\n")
 input(f"Welcome to Hangman!\n\nYour word has been selected. Press the 'enter' key to begin!\n")
 
+def clear():
+    if os.name == 'nt':
+        os.system("cls")
+    else:
+        os.system("clear")
+    
 def guess(letter):
     if letter in used:
         print("You have already used that letter.")
@@ -56,7 +62,7 @@ while gameRunning == True and livesRemaining > 0:
     printBoard()
     print(f"Letters you have already used: {" ".join(sorted(used))}\n")
     charGuess = getGuess()
-    os.system('cls')
+    clear()
 
     if len(charGuess) > 1 and charGuess == "quit":
         gameRunning = False
@@ -73,14 +79,14 @@ while gameRunning == True and livesRemaining > 0:
 
 
 if userQuit == True:
-    os.system('cls')
+    clear()
     print("Thank you for playing. Goodbye!")
 elif livesRemaining == 0:
-    os.system('cls')
+    clear()
     print(art.board[livesRemaining])
     print("You ran out of lives! Sorry.")
     print(f"The word was {word.upper()}...")
 else:
-    os.system('cls')
+    clear()
     print(f"The word was {word.upper()}!")
     print(f"CONGRATS! You guessed it right with {livesRemaining} lives remaining.")
