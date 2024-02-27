@@ -2,8 +2,6 @@ import os
 import art
 
 running = True
-bidders = {0: "Nobody"}
-biddersID = 1
 bids = {"Nobody": 0}
 currentWinner = "Nobody"
 
@@ -16,8 +14,8 @@ def getName():
         if name.isalpha() == False:
             print("Invalid input. Please type in a name using only letters.")
             continue
-        for key in bidders:
-            if bidders[key].lower() == name.lower():
+        for key in bids:
+            if key.lower() == name.lower():
                 print("Sorry, name is already in use. Please use a different name.")
                 nameUsed = True
                 break
@@ -34,15 +32,12 @@ def getBid():
             print("Invalid input. Please type in a number.")
 
 def inputBid(user, bid):
-    global biddersID
     global currentWinner
     global bids
-    bidders[biddersID] = user
     bids[user] = bid
 
     if bid > bids[currentWinner]:
-        currentWinner = bidders[biddersID]
-    biddersID += 1
+        currentWinner = user
 
 def endRunning():
     validInput = False
