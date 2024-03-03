@@ -2,12 +2,10 @@
 
 ## 2-27-2024
 
-v1.0:
-
 Initial code commit. Udemy 100 days of code. Practice with:
 
-- eval() function
-- function returns
-- dictionaries
-- functions within dictionaries
-- docstrings
+* eval() function
+* function returns
+* dictionaries
+* functions within dictionaries
+* docstrings
