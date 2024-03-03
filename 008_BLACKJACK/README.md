@@ -15,7 +15,7 @@ Initial code commit. Udemy 100 days of code. Practice with:
 
 ### **Flow Chart:**
 
-![Flow Chart for Blackjack](FLOWCHART.png)
+![Flow Chart for Blackjack](flowchart.png)
 
 ### **Rules:**
 
