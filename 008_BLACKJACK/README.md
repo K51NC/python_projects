@@ -15,42 +15,7 @@ Initial code commit. Udemy 100 days of code. Practice with:
 
 ### **Flow Chart:**
 
-```mermaid
-graph TD;
-    A[Start of Round] --> Build Title;
-    Build Title --> B[How Many Players?];
-    B --> C[Players Purchases Chips];
-    C --> D[Player Bets];
-    D --> E[Deal Players and Dealer 2 Cards];
-    E --> F[Show Players Their Cards and Dealer's Second Dealt Card];
-    F --> G[Check for Dealer Blackjack];
-    G --> |no| I[Player Turn];
-    G --> |yes| H[players with blackjack get their bet back, all others lose their bet];
-    H --> U[End of Round];
-    I --> J[Check for player blackjack];
-    J --> |no| L[Player 'h' or 's'];
-    J --> |yes| K[Player Wins their bet + 1.5x their bet];
-    K --> O[All Players Done?];
-    L --> |'h'| M[Deal Another Card and Check for Bust];
-    L --> |'s'| O[All Players Done?];
-    M --> |no| L;
-    M --> |yes| N[Player Busts and Loses Bet];
-    O --> |no| I;
-    O --> |yes| P[Check if all players bust];
-    P --> |yes| U[End of Round];
-    P --> |no| Q[Dealer Turn];
-    Q --> |<17| Q[Dealer Must Hit];
-    Q --> |>=17| S[Dealer Must Stop];
-    Q --> |>21| S[Dealer Busts and must stop];
-    S --> T[Compare Dealer score to each player and Declare Winners];
-    T --> |player wins| [Payout players 2x their bet];
-    T --> |dealer wins| [Player loses their bet];
-    T --> |push| [Player keeps their bet];
-    U[End of Round] --> V[Ask if players want to play again];
-    V --> |yes| C[Players Purchases Chips];
-    V --> |no| W[Display Chip Balance for Each Player and say goodbye];
-    W --> X[End of game];
-```
+![Flow Chart for Blackjack](FLOWCHART.png)
 
 ### **Rules:**
 
