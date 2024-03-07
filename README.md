@@ -40,3 +40,7 @@ Although these will mostly be simple learning projects, I will be keeping them h
 ### 3-3-2024
 
 * updated 008_BLACKJACK to a working version (see README.md in that folder for more details)
+
+### 3-6-2024
+
+* added 009_HIGHER_LOWER:  **NOT A FULL WORKING VERSION YET.** (see README.md in that folder for more details)

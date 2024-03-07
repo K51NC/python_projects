@@ -1,0 +1,432 @@
+{
+  "movies": [
+    { "title": "Avatar", "year": 2024, "movieID": "9018736", "rating": 7.4 },
+    {
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "movieID": "4154796",
+      "rating": 8.4
+    },
+    {
+      "title": "Avatar: The Way of Water",
+      "year": 2022,
+      "movieID": "1630029",
+      "rating": 7.6
+    },
+    { "title": "Titanic", "year": 1997, "movieID": "0120338", "rating": 7.9 },
+    {
+      "title": "Star Wars: Episode VII - The Force Awakens",
+      "year": 2015,
+      "movieID": "2488496",
+      "rating": 7.8
+    },
+    {
+      "title": "Avengers: Infinity War",
+      "year": 2018,
+      "movieID": "4154756",
+      "rating": 8.4
+    },
+    {
+      "title": "Spider-Man: No Way Home",
+      "year": 2021,
+      "movieID": "10872600",
+      "rating": 8.2
+    },
+    {
+      "title": "Jurassic World",
+      "year": 2015,
+      "movieID": "0369610",
+      "rating": 6.9
+    },
+    {
+      "title": "The Lion King",
+      "year": 1994,
+      "movieID": "0110357",
+      "rating": 8.5
+    },
+    {
+      "title": "The Avengers",
+      "year": 2012,
+      "movieID": "0848228",
+      "rating": 8.0
+    },
+    { "title": "Furious 7", "year": 2015, "movieID": "2820852", "rating": 7.1 },
+    {
+      "title": "Top Gun: Maverick",
+      "year": 2022,
+      "movieID": "1745960",
+      "rating": 8.2
+    },
+    { "title": "Frozen II", "year": 2019, "movieID": "4520988", "rating": 6.8 },
+    { "title": "Barbie", "year": 2023, "movieID": "1517268", "rating": 6.9 },
+    {
+      "title": "Avengers: Age of Ultron",
+      "year": 2015,
+      "movieID": "2395427",
+      "rating": 7.3
+    },
+    { "title": "Frozen", "year": 2013, "movieID": "2294629", "rating": 7.4 },
+    {
+      "title": "The Super Mario Bros. Movie",
+      "year": 2023,
+      "movieID": "6718170",
+      "rating": 7.0
+    },
+    {
+      "title": "Harry Potter and the Deathly Hallows: Part 2",
+      "year": 2011,
+      "movieID": "1201607",
+      "rating": 8.1
+    },
+    {
+      "title": "Black Panther",
+      "year": 2018,
+      "movieID": "1825683",
+      "rating": 7.3
+    },
+    {
+      "title": "Star Wars: Episode VIII - The Last Jedi",
+      "year": 2017,
+      "movieID": "2527336",
+      "rating": 6.9
+    },
+    {
+      "title": "Jurassic World: Fallen Kingdom",
+      "year": 2018,
+      "movieID": "4881806",
+      "rating": 6.1
+    },
+    {
+      "title": "Beauty and the Beast",
+      "year": 2017,
+      "movieID": "2771200",
+      "rating": 7.1
+    },
+    {
+      "title": "Incredibles 2",
+      "year": 2018,
+      "movieID": "3606756",
+      "rating": 7.5
+    },
+    {
+      "title": "The Fate of the Furious",
+      "year": 2017,
+      "movieID": "4630562",
+      "rating": 6.6
+    },
+    {
+      "title": "Iron Man 3",
+      "year": 2013,
+      "movieID": "1300854",
+      "rating": 7.1
+    },
+    { "title": "Minions", "year": 2015, "movieID": "2293640", "rating": 6.4 },
+    {
+      "title": "The Lord of the Rings: The Return of the King",
+      "year": 2003,
+      "movieID": "0167260",
+      "rating": 9.0
+    },
+    {
+      "title": "Captain America: Civil War",
+      "year": 2016,
+      "movieID": "3498820",
+      "rating": 7.8
+    },
+    { "title": "Aquaman", "year": 2023, "movieID": "9663764", "rating": 5.7 },
+    { "title": "Skyfall", "year": 2012, "movieID": "1074638", "rating": 7.8 },
+    {
+      "title": "Spider-Man: Far from Home",
+      "year": 2019,
+      "movieID": "6320628",
+      "rating": 7.4
+    },
+    {
+      "title": "Captain Marvel",
+      "year": 2019,
+      "movieID": "4154664",
+      "rating": 6.8
+    },
+    {
+      "title": "Transformers: Dark of the Moon",
+      "year": 2011,
+      "movieID": "1399103",
+      "rating": 6.2
+    },
+    {
+      "title": "Jurassic Park",
+      "year": 1993,
+      "movieID": "0107290",
+      "rating": 8.2
+    },
+    {
+      "title": "The Dark Knight Rises",
+      "year": 2012,
+      "movieID": "1345836",
+      "rating": 8.4
+    },
+    {
+      "title": "Transformers: Age of Extinction",
+      "year": 2014,
+      "movieID": "2109248",
+      "rating": 5.6
+    },
+    { "title": "Joker", "year": 2019, "movieID": "7286456", "rating": 8.4 },
+    {
+      "title": "Star Wars: Episode IX - The Rise of Skywalker",
+      "year": 2019,
+      "movieID": "2527338",
+      "rating": 6.4
+    },
+    {
+      "title": "Toy Story 4",
+      "year": 2019,
+      "movieID": "1979376",
+      "rating": 7.7
+    },
+    { "title": "Pirates of the Caribbean: Dead Man's Chest" },
+    { "title": "Aladdin", "year": 2019, "movieID": "6139732", "rating": 6.9 },
+    {
+      "title": "Pirates of the Caribbean: On Stranger Tides",
+      "year": 2011,
+      "movieID": "1298650",
+      "rating": 6.6
+    },
+    {
+      "title": "Despicable Me 3",
+      "year": 2017,
+      "movieID": "3469046",
+      "rating": 6.2
+    },
+    {
+      "title": "Finding Dory",
+      "year": 2016,
+      "movieID": "2277860",
+      "rating": 7.2
+    },
+    {
+      "title": "The Dark Knight",
+      "year": 2008,
+      "movieID": "0468569",
+      "rating": 9.0
+    },
+    {
+      "title": "Star Wars: Episode I - The Phantom Menace",
+      "year": 1999,
+      "movieID": "0120915",
+      "rating": 6.5
+    },
+    { "title": "Zootopia", "year": 2016, "movieID": "2948356", "rating": 8.0 },
+    {
+      "title": "Alice in Wonderland",
+      "year": 2010,
+      "movieID": "1014759",
+      "rating": 6.4
+    },
+    {
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "year": 2001,
+      "movieID": "0241527",
+      "rating": 7.6
+    },
+    {
+      "title": "The Hobbit: An Unexpected Journey",
+      "year": 2012,
+      "movieID": "0903624",
+      "rating": 7.8
+    },
+    {
+      "title": "Jurassic World Dominion",
+      "year": 2022,
+      "movieID": "8041270",
+      "rating": 5.6
+    },
+    {
+      "title": "Jumanji: Welcome to the Jungle",
+      "year": 2017,
+      "movieID": "2283362",
+      "rating": 6.9
+    },
+    { "title": "Despicable Me 2" },
+    { "title": "The Jungle Book" },
+    {
+      "title": "The Hobbit: The Battle of the Five Armies",
+      "year": 2014,
+      "movieID": "2310332",
+      "rating": 7.4
+    },
+    {
+      "title": "Pirates of the Caribbean: At World's End",
+      "year": 2007,
+      "movieID": "0449088",
+      "rating": 7.1
+    },
+    {
+      "title": "The Hobbit: The Desolation of Smaug",
+      "year": 2013,
+      "movieID": "1170358",
+      "rating": 7.8
+    },
+    {
+      "title": "Oppenheimer",
+      "year": 2023,
+      "movieID": "15398776",
+      "rating": 8.4
+    },
+    {
+      "title": "Doctor Strange in the Multiverse of Madness",
+      "year": 2022,
+      "movieID": "9419884",
+      "rating": 6.9
+    },
+    {
+      "title": "The Lord of the Rings: The Two Towers",
+      "year": 2002,
+      "movieID": "0167261",
+      "rating": 8.8
+    },
+    {
+      "title": "Finding Nemo",
+      "year": 2003,
+      "movieID": "0266543",
+      "rating": 8.2
+    },
+    {
+      "title": "Minions: The Rise of Gru",
+      "year": 2022,
+      "movieID": "5113044",
+      "rating": 6.5
+    },
+    { "title": "Harry Potter and the Half-Blood Prince" },
+    { "title": "Shrek 2", "year": 2004, "movieID": "0298148", "rating": 7.3 },
+    {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "year": 2002,
+      "movieID": "0295297",
+      "rating": 7.4
+    },
+    { "title": "The Battle at Lake Changjin" },
+    {
+      "title": "Harry Potter and the Goblet of Fire",
+      "year": 2005,
+      "movieID": "0330373",
+      "rating": 7.7
+    },
+    {
+      "title": "Spider-Man 3",
+      "year": 2007,
+      "movieID": "0413300",
+      "rating": 6.3
+    },
+    { "title": "Ice Age: Dawn of the Dinosaurs" },
+    {
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "year": 2001,
+      "movieID": "0120737",
+      "rating": 8.9
+    },
+    { "title": "Spectre", "year": 2015, "movieID": "2379713", "rating": 6.8 },
+    {
+      "title": "Spider-Man: Homecoming",
+      "year": 2017,
+      "movieID": "2250912",
+      "rating": 7.4
+    },
+    {
+      "title": "Ice Age: Continental Drift",
+      "year": 2012,
+      "movieID": "1667889",
+      "rating": 6.5
+    },
+    {
+      "title": "Batman v Superman: Dawn of Justice",
+      "year": 2016,
+      "movieID": "2975590",
+      "rating": 6.5
+    },
+    {
+      "title": "Wolf Warrior 2",
+      "year": 2017,
+      "movieID": "7131870",
+      "rating": 5.9
+    },
+    {
+      "title": "Star Wars: Episode III - Revenge of the Sith",
+      "year": 2005,
+      "movieID": "0121766",
+      "rating": 7.6
+    },
+    {
+      "title": "The Hunger Games: Catching Fire",
+      "year": 2013,
+      "movieID": "1951264",
+      "rating": 7.5
+    },
+    {
+      "title": "Guardians of the Galaxy Vol. 2",
+      "year": 2017,
+      "movieID": "3896198",
+      "rating": 7.6
+    },
+    {
+      "title": "Black Panther: Wakanda Forever",
+      "year": 2022,
+      "movieID": "9114286",
+      "rating": 6.7
+    },
+    {
+      "title": "Inside Out",
+      "year": 2015,
+      "movieID": "2096673",
+      "rating": 8.1
+    },
+    { "title": "Venom", "year": 2018, "movieID": "1270797", "rating": 6.6 },
+    {
+      "title": "Thor: Ragnarok",
+      "year": 2017,
+      "movieID": "3501632",
+      "rating": 7.9
+    },
+    {
+      "title": "The Twilight Saga: Breaking Dawn - Part 2",
+      "year": 2012,
+      "movieID": "1673434",
+      "rating": 5.5
+    },
+    {
+      "title": "Guardians of the Galaxy Vol. 3",
+      "year": 2023,
+      "movieID": "6791350",
+      "rating": 7.9
+    },
+    { "title": "Inception", "year": 2010, "movieID": "1375666", "rating": 8.8 },
+    {
+      "title": "Transformers: Revenge of the Fallen",
+      "year": 2009,
+      "movieID": "1055369",
+      "rating": 6.0
+    },
+    { "title": "Wonder Woman" },
+    { "title": "Hi, Mom", "year": 1970, "movieID": "0065836", "rating": 6.1 },
+    {
+      "title": "Independence Day",
+      "year": 1996,
+      "movieID": "0116629",
+      "rating": 7.0
+    },
+    {
+      "title": "Fantastic Beasts and Where to Find Them",
+      "year": 2016,
+      "movieID": "3183660",
+      "rating": 7.2
+    },
+    { "title": "Coco", "year": 2017, "movieID": "2380307", "rating": 8.4 },
+    {
+      "title": "Shrek the Third",
+      "year": 2007,
+      "movieID": "0413267",
+      "rating": 6.1
+    }
+  ],
+  "last_update": "03/07/2024"
+}
