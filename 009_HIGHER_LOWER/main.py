@@ -1,10 +1,13 @@
 import json
 import os
+import sys
 from imdb import IMDb
+from imdb import IMDbDataAccessError
 from datetime import datetime
 from art import title
 from random import randint
 from time import sleep
+import logging
 
 def clear():
     if os.name == 'nt':
@@ -15,50 +18,48 @@ def clear():
 def updateRatings():
     """This updates the "ratings" database."""
 
-    def updateTitles():
-        """Sets the titles from the "movies" file. This "movies" file can be altered to change which movies are used in the "ratings" database."""
-        with open(movies_file, "r") as file:
-            movieTitles = file.read()
-            moviesList = movieTitles.split("\n")
-        
-        data["movies"] = []
-
-        while len(data["movies"]) < len(moviesList):
-            data["movies"].append({})
-
-        for _ in range(0, len(moviesList)):
-            data["movies"][_]["title"] = moviesList[_]
-
-    def setMetaData(movie):
-        """Sets the metadata of the movie."""
+    def getMovieData(t):
+        movTitle = t
+        movData = {}
+        stderr = sys.stderr
+        sys.stderr = open(os.devnull, "w")
         try:
-            movTitle = movie["title"]
+            logger = logging.getLogger("imdbpy")
+            logger.disabled = True
             search_results = imdbDB.search_movie(movTitle)
             movID = search_results[0].getID()
             mov = imdbDB.get_movie(movID)
-
-            # if movID:
-            movie["year"] = mov["year"]
-            movie["movieID"] = movID
-            movie["rating"] = mov["rating"]
-            print(f"{movTitle} ({movie["year"]})")
-            return False
-        except:
-            print(f"No search results for {movTitle}.")
-            return True
+            movData = {
+                "title": t,
+                "year": mov["year"],
+                "movieID": movID,
+                "rating": mov["rating"]
+            }
+        except IMDbDataAccessError:
+            print(f"FAILED! {movTitle}")
+            return False, movData
+        sys.stderr = stderr
+        print(f"SUCCESS! {movTitle}")
+        return True, movData
 
     data = {}
     print("Please wait. This may take a few minutes.")
-    # progress bar here?
 
-    # update ratings file with titles from the movie list file
-    updateTitles()
+    with open(movies_file, "r") as file:
+        movs = file.read()
+        movsList = movs.split("\n")
+        qtyOfMovies = len(movsList)
 
-    # get metadata for each movie in movie list
-    for movie in data["movies"]:
-        remove = setMetaData(movie)
-        if remove:
-            data["movies"].remove(movie)
+    print(f"Attempting to gather updated ratings for {qtyOfMovies} movies...")
+
+    data["movies"] = []
+
+    for i in range(0, qtyOfMovies):
+        success, movieData = getMovieData(movsList[i])
+        if success:
+            data["movies"].append(movieData)
+    
+    print(f"Successfully gathered data for {len(data["movies"])} out of {qtyOfMovies} movies.")
     
     data["last_update"] = currentDate
 
@@ -110,11 +111,12 @@ def manualUpdate(data):
             print("Invalid input. Please type 'y' or 'n'.")
 
 def chooseMovie(data):
-    selection = data["movies"][randint(0, len(data["movies"]) - 1)]
+    selectionIndex = randint(0, len(data["movies"]) - 1)
+    selection = data["movies"][selectionIndex]
     movTitle = selection["title"]
     movYear = selection["year"]
     movRating = selection["rating"]
-    return [movTitle, movYear, movRating]
+    return [movTitle, movYear, movRating, selectionIndex]
 
 def correctAnswer(opt1: int, opt2: int, answer: str):
     if answer == 'l' or answer == 'lower':
@@ -213,7 +215,7 @@ def displayLeaderboard(data):
 # inits
 # currentDate = datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + " UTC"
 currentDate = datetime.now().strftime("%m/%d/%Y")
-imdbDB = IMDb()
+imdbDB = IMDb(accessSystem="http", reraiseExceptions=True)
 sleepTime = 2
 usedMovies = []
 print(title)
@@ -243,6 +245,7 @@ currentHighDate = scores["current_highscore"]["date_of_highscore"]
 userName = getUserName()
 userScore = 0
 userAnswer = ""
+bypass = False
 clear()
 print(f"Hello {userName}!")
 
@@ -264,29 +267,40 @@ for index, name in enumerate(scores["players"]):
         userIndex = index
 
 optionOne = chooseMovie(ratings)
+ratings["movies"].pop(optionOne[3])
 optionTwo = []
 
 while True:
     while optionTwo == [] or optionOne[2] == optionTwo[2]:
-        optionTwo = chooseMovie(ratings)
-    clear()
-    print(f"Score to beat: {currentHighName} - {currentHighScore}")
-    print(f"Personal best: {scores["players"][userIndex]["highscore"]}")
-    print(f"Current score: {userScore}\n")
-    print(f"{optionOne[0]} ({optionOne[1]})\nRating of {optionOne[2]}/10\n")
-    print(f"{optionTwo[0]} ({optionTwo[1]})")
-    userAnswer = input(f"Does this have a higher or lower rating than {optionOne[0]}? 'H' or 'L'\n").lower()
-    if userAnswer != 'h' and userAnswer != 'l':
-        print("Invalid input.")
-        sleep(sleepTime)
-    else:
-        if correctAnswer(optionOne[2], optionTwo[2], userAnswer):
-            userAnswer = ""
-            optionOne = optionTwo
-            userScore += 1
-        else:
-            newScores = updateScores(scores, userIndex, userName, userScore)
+        try:
+            optionTwo = chooseMovie(ratings)
+        except:
+            bypass = True
             break
+    if not bypass:
+        ratings["movies"].pop(optionTwo[3])
+        clear()
+        print(f"Score to beat: {currentHighName} - {currentHighScore}")
+        print(f"Personal best: {scores["players"][userIndex]["highscore"]}")
+        print(f"Current score: {userScore}\n")
+        print(f"{optionOne[0]} ({optionOne[1]})\nRating of {optionOne[2]}/10\n")
+        print(f"{optionTwo[0]} ({optionTwo[1]})")
+        userAnswer = input(f"Does this have a higher or lower rating than {optionOne[0]}? 'H' or 'L'\n").lower()
+        if userAnswer != 'h' and userAnswer != 'l':
+            print("Invalid input.")
+            sleep(sleepTime)
+        else:
+            if correctAnswer(optionOne[2], optionTwo[2], userAnswer):
+                userAnswer = ""
+                optionOne = optionTwo
+                userScore += 1
+            else:
+                newScores = updateScores(scores, userIndex, userName, userScore)
+                break
+    else:
+        newScores = updateScores(scores, userIndex, userName, userScore)
+        print("Ran out of movies. Max score reached.")
+        break
 
 newScores["players"] = sortHighscores(newScores)
 displayLeaderboard(newScores)

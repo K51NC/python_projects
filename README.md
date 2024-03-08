@@ -49,10 +49,14 @@ I am completing all of the projects from "100 days of code" on Udemy before I am
 
 ### 3-6-2024
 
-* added 009_HIGHER_LOWER:  **NOT A FULL WORKING VERSION YET.** (see README.md in that folder for more details)
+* added 009_HIGHER_LOWER:  ~~**NOT A**~~ **FULL WORKING VERSION** (see README.md in that folder for more details)
 
 ### 3-7-2024
 
-* updated 009_HIGHER_LOWER to an **ALMOST** working version (see README.md in that folder for more details)
+* updated 009_HIGHER_LOWER to an ~~**ALMOST**~~ working version (see README.md in that folder for more details)
 
-*If you don't update the "ratings" database and don't mind potentially getting repeats of movies to choose from, the game is fully functional.*
+*If you don't update the "ratings" database ~~and don't mind potentially getting repeats of movies to choose from~~, the game is fully functional.*
+
+### 3-8-2024
+
+* updated 009_HIGHER_LOWER to a full working version. Still some other features to add, but those will come later. (see README.md in that folder for more details)
