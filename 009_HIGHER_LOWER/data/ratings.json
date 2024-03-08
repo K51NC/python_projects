@@ -1,18 +1,6 @@
 {
   "movies": [
-    { "title": "Avatar", "year": 2024, "movieID": "9018736", "rating": 7.4 },
-    {
-      "title": "Avengers: Endgame",
-      "year": 2019,
-      "movieID": "4154796",
-      "rating": 8.4
-    },
-    {
-      "title": "Avatar: The Way of Water",
-      "year": 2022,
-      "movieID": "1630029",
-      "rating": 7.6
-    },
+    { "title": "Avatar", "year": 2024, "movieID": "9018736", "rating": 7.3 },
     { "title": "Titanic", "year": 1997, "movieID": "0120338", "rating": 7.9 },
     {
       "title": "Star Wars: Episode VII - The Force Awakens",
@@ -57,8 +45,6 @@
       "movieID": "1745960",
       "rating": 8.2
     },
-    { "title": "Frozen II", "year": 2019, "movieID": "4520988", "rating": 6.8 },
-    { "title": "Barbie", "year": 2023, "movieID": "1517268", "rating": 6.9 },
     {
       "title": "Avengers: Age of Ultron",
       "year": 2015,
@@ -142,18 +128,6 @@
       "rating": 7.4
     },
     {
-      "title": "Captain Marvel",
-      "year": 2019,
-      "movieID": "4154664",
-      "rating": 6.8
-    },
-    {
-      "title": "Transformers: Dark of the Moon",
-      "year": 2011,
-      "movieID": "1399103",
-      "rating": 6.2
-    },
-    {
       "title": "Jurassic Park",
       "year": 1993,
       "movieID": "0107290",
@@ -184,7 +158,18 @@
       "movieID": "1979376",
       "rating": 7.7
     },
-    { "title": "Pirates of the Caribbean: Dead Man's Chest" },
+    {
+      "title": "Toy Story 3",
+      "year": 2010,
+      "movieID": "0435761",
+      "rating": 8.3
+    },
+    {
+      "title": "Pirates of the Caribbean: Dead Man's Chest",
+      "year": 2006,
+      "movieID": "0383574",
+      "rating": 7.4
+    },
     { "title": "Aladdin", "year": 2019, "movieID": "6139732", "rating": 6.9 },
     {
       "title": "Pirates of the Caribbean: On Stranger Tides",
@@ -247,8 +232,30 @@
       "movieID": "2283362",
       "rating": 6.9
     },
-    { "title": "Despicable Me 2" },
-    { "title": "The Jungle Book" },
+    {
+      "title": "Harry Potter and the Deathly Hallows: Part 1",
+      "year": 2010,
+      "movieID": "0926084",
+      "rating": 7.7
+    },
+    {
+      "title": "Despicable Me 2",
+      "year": 2013,
+      "movieID": "1690953",
+      "rating": 7.3
+    },
+    {
+      "title": "The Lion King",
+      "year": 1994,
+      "movieID": "0110357",
+      "rating": 8.5
+    },
+    {
+      "title": "The Jungle Book",
+      "year": 2016,
+      "movieID": "3040964",
+      "rating": 7.4
+    },
     {
       "title": "The Hobbit: The Battle of the Five Armies",
       "year": 2014,
@@ -297,7 +304,18 @@
       "movieID": "5113044",
       "rating": 6.5
     },
-    { "title": "Harry Potter and the Half-Blood Prince" },
+    {
+      "title": "Harry Potter and the Order of the Phoenix",
+      "year": 2007,
+      "movieID": "0373889",
+      "rating": 7.5
+    },
+    {
+      "title": "Harry Potter and the Half-Blood Prince",
+      "year": 2009,
+      "movieID": "0417741",
+      "rating": 7.6
+    },
     { "title": "Shrek 2", "year": 2004, "movieID": "0298148", "rating": 7.3 },
     {
       "title": "Harry Potter and the Chamber of Secrets",
@@ -305,7 +323,18 @@
       "movieID": "0295297",
       "rating": 7.4
     },
-    { "title": "The Battle at Lake Changjin" },
+    {
+      "title": "Bohemian Rhapsody",
+      "year": 2018,
+      "movieID": "1727824",
+      "rating": 7.9
+    },
+    {
+      "title": "The Battle at Lake Changjin",
+      "year": 2021,
+      "movieID": "13462900",
+      "rating": 5.5
+    },
     {
       "title": "Harry Potter and the Goblet of Fire",
       "year": 2005,
@@ -318,7 +347,18 @@
       "movieID": "0413300",
       "rating": 6.3
     },
-    { "title": "Ice Age: Dawn of the Dinosaurs" },
+    {
+      "title": "The Secret Life of Pets",
+      "year": 2016,
+      "movieID": "2709768",
+      "rating": 6.5
+    },
+    {
+      "title": "Ice Age: Dawn of the Dinosaurs",
+      "year": 2009,
+      "movieID": "1080016",
+      "rating": 6.9
+    },
     {
       "title": "The Lord of the Rings: The Fellowship of the Ring",
       "year": 2001,
@@ -406,7 +446,18 @@
       "movieID": "1055369",
       "rating": 6.0
     },
-    { "title": "Wonder Woman" },
+    {
+      "title": "Spider-Man",
+      "year": 2023,
+      "movieID": "9362722",
+      "rating": 8.6
+    },
+    {
+      "title": "Wonder Woman",
+      "year": 2017,
+      "movieID": "0451279",
+      "rating": 7.3
+    },
     { "title": "Hi, Mom", "year": 1970, "movieID": "0065836", "rating": 6.1 },
     {
       "title": "Independence Day",
@@ -428,5 +479,5 @@
       "rating": 6.1
     }
   ],
-  "last_update": "03/07/2024"
+  "last_update": "03/08/2024"
 }

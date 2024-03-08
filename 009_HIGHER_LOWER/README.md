@@ -44,6 +44,14 @@ New concepts that I am wanting to learn in this project are:
 
 Additionally, I would like to focus on using functions to **return** values instead of altering global variables and/or using **print** statements within the function to display the value. I feel like this would help with readability/organization and make the code more modular. (I kind of got carried away figuring out how other things work and I don't feel like I did a good job of this again. I will try to focus on this more in the future or rework this project later.)
 
+### 3-7-2024
+
+Things I accomplished today:
+* Added a highscore board at the end of the game.
+* Added highscore board to the end of the game.
+
+My code is still clearly a rat's nest. I need to work on this. I also need to work on my use of functions. I am also not using them as effectively as I should be. I need to work on this. I hope I fix this soon because I'm sure it will only get worse as I get further into OOP and the programs get more complex. Found a bug in the code where movies are slipping by the check for a rating and staying in the database without metadata. I think adding each individual movie to the database after it has been checked for metadata will prevent this. I currently have it "mass" updating.
+
 ### **Flow Chart**
 
 ![Flow Chart for Higher-Lower](flowchart.png)
@@ -53,15 +61,15 @@ Additionally, I would like to focus on using functions to **return** values inst
 * Remove IMDbPY dependency to only be a dependency if the user wants to update the ratings database
 * Add a way to update the ratings database from the command line (if IMDbPY is installed and I change the code to allow for this.)
 * Progress bar for updating the ratings database
-* add a high scores chart to the game
+* [x] add a high scores chart to the game
 
 ### **To-Do**
 
-* need to find a way to prevent any two options from having the same rating
-* notify the user if they are the new leader in the high scores
+* remove previously used movies from the options to use in the game but what happens when all the movies have been used?
 
 ### **Bugs**
 
+* some movies are slipping by the check for a rating and staying in the database without metadata. I need to find a way to guarantee that the movie has all the metadata before it is added to the database and if it doesn't, I need to find a way to remove it from the database. (I think I will need to rework the code to add the movie to the database after it has been checked for metadata. This would prevent me from ever having to remove a movie from the database.)
 * While updating the "ratings" database, the program will sometimes error out and not update the database. It throws a timeout error. I believe this might be the api call timing out. I will need to add a try/except block to handle this error or find a way to prevent it from happening.
   * I could potentially call a separate python program to update the database separately from the main game program. (I feel like this option allows for more flexibility and control over the process. I could also potentially run two programs at once. I assume this would be possible? I will have to look into this more.)
   * I could also try increasing the timeout time for the api call if that is available.

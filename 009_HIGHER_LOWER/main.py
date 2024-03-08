@@ -151,6 +151,7 @@ def updateScores(data, index, name, score):
     # update highest score name, score, date
     if data["players"][index]["highscore"] > data["current_highscore"]["highscore"]:
         data["current_highscore"] = data["players"][index]
+        print("You are now at the top of the leaderboard!\n")
     data["last_update"] = currentDate
     return data
 
@@ -163,11 +164,58 @@ def newScoresUser(data, name):
     data["players"].append(user)
     return data
 
+# sort players by descending highscore
+def sortHighscores(data):
+
+    def getHighscore(player):
+        return player[1]
+
+    currentHigh = data["current_highscore"]
+    playersList = []
+    newPlayersList = []
+    for index, player in enumerate(data["players"]):
+        if player != currentHigh:
+            playersList.append([index, player["highscore"]])
+        elif player == currentHigh:
+            newPlayersList.append([index, player["highscore"]])
+        else:
+            raise
+    
+    playersList.sort(key=getHighscore, reverse=True)
+    newPlayersList += playersList
+    newPlayers = []
+    for each in newPlayersList:
+        newPlayers.append(data["players"][each[0]])
+
+    return newPlayers
+
+
+
+def displayLeaderboard(data):
+    print("LEADERBOARD\n-----------")
+    leaderName = data["current_highscore"]["name"]
+    leaderScore = data["current_highscore"]["highscore"]
+    leaderDate = data["current_highscore"]["date_of_highscore"]
+    players = data["players"]
+    nameSpacing = 1
+    scoreSpacing = 1
+    for each in players:
+        if len(each["name"]) > nameSpacing:
+            nameSpacing = len(each["name"])
+        if len(str(each["highscore"])) > scoreSpacing:
+            scoreSpacing = len(str(each["highscore"]))
+    print(f" 1- {leaderName:<{nameSpacing}} | {leaderScore:^{scoreSpacing}} | {leaderDate:>10}")
+    for index in range(1, min(len(data["players"]), 10)):
+        print(f"{index + 1:>2}- {players[index]["name"]:<{nameSpacing}} | {players[index]["highscore"]:^{scoreSpacing}} | {players[index]["date_of_highscore"]:>10}")
+
+
+
 # inits
 # currentDate = datetime.now().strftime("%m/%d/%Y, %H:%M:%S") + " UTC"
 currentDate = datetime.now().strftime("%m/%d/%Y")
 imdbDB = IMDb()
 sleepTime = 2
+usedMovies = []
 print(title)
 
 # file paths
@@ -216,10 +264,10 @@ for index, name in enumerate(scores["players"]):
         userIndex = index
 
 optionOne = chooseMovie(ratings)
-optionTwo = chooseMovie(ratings)
+optionTwo = []
 
 while True:
-    while optionOne == optionTwo:
+    while optionTwo == [] or optionOne[2] == optionTwo[2]:
         optionTwo = chooseMovie(ratings)
     clear()
     print(f"Score to beat: {currentHighName} - {currentHighScore}")
@@ -239,6 +287,9 @@ while True:
         else:
             newScores = updateScores(scores, userIndex, userName, userScore)
             break
+
+newScores["players"] = sortHighscores(newScores)
+displayLeaderboard(newScores)
 
 with open(scores_file, "w") as file:
     json.dump(newScores, file)
