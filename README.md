@@ -21,13 +21,17 @@ I am completing all of the projects from "100 days of code" on Udemy before I am
 ### 2-22-2024
 
 * added 002_ROCK_PAPER_SCISSORS (see README.md in that folder for more details)
+
 * added 003_PASSWORD_GENERATOR (see README.md in that folder for more details)
+
 * added 004_HANGMAN (see README.md in that folder for more details)
 
 ### 2-24-2024
 
 * Familiarizing myself with manipulating containers. Moved primary "python_projects" folder to a container.
+
 * updated 004_HANGMAN (see README.md in that folder for more details)
+
 * added 005_CIPHER (see README.md in that folder for more details)
 
 ### 2-26-2024
@@ -41,6 +45,7 @@ I am completing all of the projects from "100 days of code" on Udemy before I am
 ### 3-2-2024
 
 * Familiarizing myself with better documentation and organization. Learning to use markdown and mermaid for flow charts.
+
 * added 008_BLACKJACK:  ~~**NOT A WORKING VERSION.**~~ (see README.md in that folder for more details)
 
 ### 3-3-2024
@@ -60,3 +65,7 @@ I am completing all of the projects from "100 days of code" on Udemy before I am
 ### 3-8-2024
 
 * updated 009_HIGHER_LOWER to a full working version. Still some other features to add, but those will come later. (see README.md in that folder for more details)
+
+* Facepalm moment... I am just realizing that I have been using incorrect naming conventions. I understand it's part of the learning process. I will try to use the correct naming conventions from now on and go back and update the previous projects in the future.
+
+* Researched a few things about best practices and naming conventions. Adding a "clean_code.md" file to give myself a reference of best practices and to use them with intent in future projects.
