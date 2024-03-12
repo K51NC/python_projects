@@ -26,7 +26,7 @@ The rules are simple:
 
 ### 3-6-2024
 
-**NOT A FULL WORKING VERSION YET.**
+~~**NOT A FULL WORKING VERSION YET.**~~
 
 I made this much more extensive than the "100 days of code" assigned project on purpose. This allows me to improve my Python problem solving.
 
@@ -67,6 +67,12 @@ Things I accomplished today:
 * Addressed the last item on the **To-Do** list "Remove previously used movies from the options to use in the game but what happens when all the movies have been used?"
 
 * Reworked the the code to add movies to the database after it has been checked for metadata. This should prevent me from ever having to remove a movie from the database. Also learned more about exception handling and how to prevent inevitable API timeout errors from being displayed in the console. This rework fixed every bug I had listed in the "Bugs" section.
+
+### 3-11-2024
+
+**FULL WORKING VERSION.**
+
+I guess I forgot to mention that this is a full working version. It isn't the greatest but it works!
 
 ### **Flow Chart**
 
