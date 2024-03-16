@@ -34,6 +34,16 @@ There were a couple things in the game that had me stumped for a bit but I got t
 
 Threw in a very quick "random color change" button as well just to see if I could do it within a few seconds. Later, I can add a menu to personalize things.
 
+Notes after watching the course video:
+
+* Turtle() is a class that I could've inherited from to make my own class. I haven't worked with inheritance and didn't put that together. I know that for future projects now.
+
+* I watched a video earlier today about how to "Be a Better Programmer Than 99% of Other Programmers" earlier and a key point stuck out. I started thinking to myself... This makes sense but I don't think I can sit and read an encyclopedia-sized document of information. Well, I missed a big one here with the Turtle documentation. I did look things up as I went, but I didn't read the whole thing OR at least skim through the primary methods. I missed the turtle.distance() method that would've made my collision detection SO much easier. In short, read the documentation of the modules you're using. They are probably not as long as you think and you'll learn a lot.
+
+* I repeated a lot of code... I'll just say that. Things like fonts, dates, colors, etc could have been assigned to constants and used throughout the code instead of typed out each time.
+
+* Didn't know about slicing. I could've used that to make my code cleaner in a few places. Noted for future use in projects for practice.
+
 ### **Flow Chart**
 
 ![Flow Chart for Snake Game](flowchart.png)
