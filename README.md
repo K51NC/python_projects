@@ -69,3 +69,15 @@ I am completing all of the projects from "100 days of code" on Udemy before I am
 * Facepalm moment... I am just realizing that I have been using incorrect naming conventions. I understand it's part of the learning process. I will try to use the correct naming conventions from now on and go back and update the previous projects in the future.
 
 * Researched a few things about best practices and naming conventions. Adding a "clean_code.md" file to give myself a reference of best practices and to use them with intent in future projects.
+
+### 3-11-2024
+
+* committed 010_QUIZ_GAME full working version. (see README.md in that folder for more details)
+
+### 3-15-2024
+
+* committed 011_SNAKE full working version. (see README.md in that folder for more details)
+
+* I tried to not introduce any new concepts in this project overall. I wanted to focus on modularizing my code and making it more readable. I still need to focus on not repeating code so much. I think I did a better job at separating the classes from one another but they are still VERY messy. I understand I am still learning but I need to get this in check soon. Again, the complexity of code is still high, but I also know that there are better "shorthand" ways to do things. I'm just not there yet. I'll focus on that after I feel like I have all the fundamentals down.
+
+* A lightbulb moment happened today as well. I watched a youtube video about how to "Be a Better Programmer Than 99% of Other Programmers" earlier and a key point stuck out. I started thinking to myself... This makes sense but I don't think I can sit and read an encyclopedia-sized document of information. In short, read the documentation of the modules you're using. They are probably not as long as you think and you'll learn a lot.
