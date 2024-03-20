@@ -6,7 +6,7 @@
 
 This is how you play the game.
 
-## Installation
+## Installation Instructions
 
 This is how you install the game.
 
@@ -16,7 +16,7 @@ This is how you install the game.
 
 ~~**NOT A WORKING VERSION YET.**~~
 
-New concepts im using:
+New concepts im using in this project:
 
 * Concept 1
 
