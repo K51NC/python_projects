@@ -4,10 +4,17 @@ from snake import Snake
 from food import Food
 import time
 
+file_location = "./011_SNAKE/high_score.txt"
+with open(file_location) as file:
+    try:
+        high_score = int(file.read())
+    except:
+        high_score = 0
+
 snake_width = 20
 game_board = Gameboard()
 snake = Snake(snake_width)
-scoreboard = scoreboard(game_board.board_size_y)
+scoreboard = scoreboard(game_board.board_size_y, high_score=high_score)
 food_piece = Food(
     x_neg=game_board.border_neg_x,
     x_pos=game_board.border_pos_x,
@@ -29,8 +36,10 @@ wall_collision = False
 self_collision = False
 food_change = False
 food_piece.get_new_location(snake.whole_snake)
+lives = 3
 
-while is_running:
+while is_running and lives > 0:
+    lives -= 1
     while wall_collision == False and self_collision == False:
         snake.move()
         game_board.screen.update()
@@ -49,9 +58,18 @@ while is_running:
                 )
             self_collision = snake.check_snake_collision()
         
-    scoreboard.game_over()
-    break
-
+    # scoreboard.game_over()
+    scoreboard.check_high_score()
+    end_pieces = snake.whole_snake[3:]
+    for each in end_pieces:
+        each.teleport(1000, 0)
+        each.hideturtle()
+    snake.whole_snake = snake.whole_snake[:3]
+    snake.whole_snake[0].setposition(0, 0)
+    scoreboard.current_score = 0
+    scoreboard.update_score()
+    wall_collision = False
+    self_collision = False
 
 
 
@@ -63,3 +81,5 @@ while is_running:
 
 
 game_board.exit()
+with open(file_location, "w" ) as file:
+    file.write(str(scoreboard.high_score))

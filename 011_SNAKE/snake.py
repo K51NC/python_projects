@@ -8,7 +8,7 @@ class Snake:
         self.previous_position = (-200, 0)
         self.whole_snake = []
         self.color = ("white")
-        for _ in range(20):
+        for _ in range(3):
             self.add_snake_piece()
 
     def add_snake_piece(self):

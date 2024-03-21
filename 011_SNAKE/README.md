@@ -44,6 +44,12 @@ Notes after watching the course video:
 
 * Didn't know about slicing. I could've used that to make my code cleaner in a few places. Noted for future use in projects for practice.
 
+### 3-21-2024
+
+* Added a file to store the high score. It's a simple text file this time because that was the "challenge" of the project. I did a json file in one of the earlier projects so this was pretty simple in comparison.
+
+* Also added 3 lives to the game since I didn't really make the entire program easy to add to. This is the easiest way I could think of to get the program to end without ending after the first loss. In short, I would have to recode quite a bit to add a simple file to store the high score. Not worth it at the moment.
+
 ### **Flow Chart**
 
 ![Flow Chart for Snake Game](flowchart.png)
