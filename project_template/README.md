@@ -2,13 +2,13 @@
 
 ## Description
 
-### **How to play**
+### **How to use**
 
-This is how you play the game.
+This is how you use the application.
 
 ## Installation Instructions
 
-This is how you install the game.
+This is how you install the application.
 
 ## Dev Log
 
@@ -30,13 +30,13 @@ These are general dev log notes.
 
 ![Flow Chart for Title](flowchart.png)
 
-### **Add in Future**
+### **Future Updates**
 
 * feature 1
 * feature 2
 * feature 3
 
-### **To-Do**
+### **To-Do List for Next Working Version**
 
 * task 1
 * task 2

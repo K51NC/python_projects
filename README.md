@@ -91,3 +91,7 @@ I am completing all of the projects from "100 days of code" on Udemy before I am
 ### 3-21-2024
 
 * added a high score save file to 011_SNAKE. (see README.md in that folder for more details)
+
+* added 014_MAIL_MERGE (see README.md in that folder for more details)
+
+* added a project_template folder to use as a template for future projects.

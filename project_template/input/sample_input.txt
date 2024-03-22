@@ -1,0 +1,2 @@
+Put any asset files in here.
+This is useful for images, data files, etc that you import into your project.
