@@ -1,0 +1,2 @@
+pandas library
+    pip install pandas

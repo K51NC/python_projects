@@ -95,3 +95,7 @@ I am completing all of the projects from "100 days of code" on Udemy before I am
 * added 014_MAIL_MERGE (see README.md in that folder for more details)
 
 * added a project_template folder to use as a template for future projects.
+
+### 3-22-2024
+
+* added 015_STATES_QUIZ (see README.md in that folder for more details)
