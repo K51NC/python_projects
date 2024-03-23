@@ -94,17 +94,17 @@ while game_is_running:
 
     # primary game component. check answer and update data.
     for index in data["state"]:
-        # if player_guess == data["state"][index].lower():
-        gameboard.mark_state(data["state"][index], data["x"][index], data["y"][index])
-        save_data["state"][index] = data["state"][index]
-        save_data["x"][index] = data["x"][index]
-        save_data["y"][index] = data["y"][index]
-        del data["state"][index]
-        del data["x"][index]
-        del data["y"][index]
-        qty_guessed += 1
-        scoreboard.update_score(qty_guessed)
-        break
+        if player_guess == data["state"][index].lower():
+            gameboard.mark_state(data["state"][index], data["x"][index], data["y"][index])
+            save_data["state"][index] = data["state"][index]
+            save_data["x"][index] = data["x"][index]
+            save_data["y"][index] = data["y"][index]
+            del data["state"][index]
+            del data["x"][index]
+            del data["y"][index]
+            qty_guessed += 1
+            scoreboard.update_score(qty_guessed)
+            break
     
     # win condition procedure
     if len(data["state"]) == 0:
