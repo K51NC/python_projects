@@ -99,3 +99,7 @@ I am completing all of the projects from "100 days of code" on Udemy before I am
 ### 3-22-2024
 
 * added 015_STATES_QUIZ (see README.md in that folder for more details)
+
+### 3-25-2024
+
+* added 016_PHONETIC_ALPHABET (see README.md in that folder for more details)
