@@ -115,3 +115,5 @@ I am completing all of the projects from "100 days of code" on Udemy before I am
 ## 3-28-2024
 
 * minor updates to 018_POMODORO (see README.md in that folder for more details)
+
+* added 019_PASSWORD_MANAGER (see README.md in that folder for more details)
