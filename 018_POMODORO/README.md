@@ -27,14 +27,26 @@ Update after section:
 
 Not going to lie, that was easy yet difficult. `Tkinter` documentation is not the best so I had to rely on a lot on the 100 Days of Code course to guide me on this one. I was still able to do quite a bit of it on my own, but little things like the `after()` method and `after_cancel()` method were something I had no clue about and both were necessary to complete this project. Regardless, I learned a LOT about `Tkinter`.
 
+### 3-28-2024
+
+Added a few ideas for the future in the README (below). Changed the timer to stop after one cycle of pomodoros (4 cycles of 25 minutes). You now have to manually start the next set of pomodoros. This is just a personal preference so I can start using the app until I add more features later.
+
 ### **Flow Chart**
 
 ### **Future Updates**
 
 * add timer adjustments for longer or shorter work periods
 * add drink water reminder
-* option for pop-up window functionality
+* Optional window “pop-up” alert and/or sounds
 * add pause button
+* Task integration
+  * Manual entry to local or online database
+  * Separate Google calendar tasks
+  * Other to-do list apps
+* Adjustable pomodoro lengths
+* Task length and priority
+  * Optionally set automatic daily pomodoros
+* Easy to use menu to swap out tasks
 
 ### **To-Do List for Next Working Version**
 

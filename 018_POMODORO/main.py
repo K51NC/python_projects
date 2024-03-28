@@ -6,7 +6,7 @@ CHECK_MARK = "✔"
 WORK_MIN = 25 * 60 # minutes * 60
 SHORT_BREAK_MIN = 5 * 60 # minutes * 60
 LONG_BREAK_MIN = 20 * 60 # minutes * 60
-# change this to you specific setup
+# change this to your specific setup
 TOMATO_FILE = "./018_POMODORO/input/tomato.png"
 
 
@@ -22,10 +22,11 @@ def pomo_start():
     checkmark_label.config(text=CHECK_MARK * checkmarks_qty)
 
     if step == 8:
-        step = 0
         main_label.config(text="Break", fg=RED)
         count_down(LONG_BREAK_MIN)
         checkmarks_qty = 0
+    elif step == 9:
+        pomo_reset()
     elif step % 2 == 0:
         main_label.config(text="Break", fg=RED)
         count_down(SHORT_BREAK_MIN)
