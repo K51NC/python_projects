@@ -31,13 +31,16 @@ Not going to lie, that was easy yet difficult. `Tkinter` documentation is not th
 
 Added a few ideas for the future in the README (below). Changed the timer to stop after one cycle of pomodoros (4 cycles of 25 minutes). You now have to manually start the next set of pomodoros. This is just a personal preference so I can start using the app until I add more features later.
 
+Added a popup to notify you of your break time. I kept missing it so I added a popup to remind me to take a break.
+
+Added a water icon to remind myself to drink. This feature reminds me to drink water after every "X" number of minutes (hardcoded in the program for now). Click the water icon to reset the timer. Also have it clearing my background `powershell` screen with the `cls` command to show how long is left on the water timer. This is just a personal thing and you can remove it if you want.
+
 ### **Flow Chart**
 
 ### **Future Updates**
 
 * add timer adjustments for longer or shorter work periods
-* add drink water reminder
-* Optional window “pop-up” alert and/or sounds
+* make window pop-up alert and/or sounds optional
 * add pause button
 * Task integration
   * Manual entry to local or online database
@@ -47,6 +50,7 @@ Added a few ideas for the future in the README (below). Changed the timer to sto
 * Task length and priority
   * Optionally set automatic daily pomodoros
 * Easy to use menu to swap out tasks
+* create an app for mobile devices
 
 ### **To-Do List for Next Working Version**
 
