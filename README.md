@@ -117,3 +117,9 @@ I am completing all of the projects from "100 days of code" on Udemy before I am
 * several updates to 018_POMODORO (see README.md in that folder for more details)
 
 * added 019_PASSWORD_MANAGER (see README.md in that folder for more details)
+
+## 3-30-2024
+
+* updated 016_PHONETIC_ALPHABET (see README.md in that folder for more details)
+
+* updated 019_PASSWORD_MANAGER (see README.md in that folder for more details)

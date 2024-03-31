@@ -25,6 +25,10 @@ Additional notes:
 
 Not the most exciting of projects. The purpose is to practice using list and dictionary comprehension. I'm using the phonetic alphabet as the data source. I'm using pandas to read the data from a csv file. I'm using dictionary comprehension to create a dictionary in this format: `"A": "Alpha"`. I'm using list comprehension to create a list of the phonetic words from an input word from the user.
 
+#### 3-30-2024
+
+Came back to this project as part of the `100 Days of Code` course for exception handling practice. I added a try-except block instead of a simple if-else block to handle the user input.
+
 ### **Flow Chart**
 
 Create dictionary from csv file --> Take user input --> Create list of phonetic words
