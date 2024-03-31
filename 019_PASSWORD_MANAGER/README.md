@@ -4,7 +4,7 @@
 
 ### **How to use**
 
-Fill in all fields with appropriate information. Select the `Generate` button to create a password. Select the `Save` button to store the password. When you select the `Generate` button, the password will be copied to the clipboard.
+Fill in all fields with appropriate information. Select the `Generate` button to create a password. Select the `Save` button to store the password. When you select the `Generate` button, the password will be copied to the clipboard. Type in a website name and select the `Search` button to retrieve the password.
 
 ## Installation Instructions
 
