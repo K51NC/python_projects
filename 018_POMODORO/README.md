@@ -40,7 +40,9 @@ Added a water icon to remind myself to drink. This feature reminds me to drink w
 ### **Future Updates**
 
 * add timer adjustments for longer or shorter work periods
-* make window pop-up alert and/or sounds optional
+* add a way to skip the current timer
+* switch from popups to a graphic on screen so independence can be maintained between the timer and the water reminder
+* make alerts and sounds optional
 * add pause button
 * Task integration
   * Manual entry to local or online database

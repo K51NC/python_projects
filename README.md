@@ -123,3 +123,9 @@ I am completing all of the projects from "100 days of code" on Udemy before I am
 * updated 016_PHONETIC_ALPHABET (see README.md in that folder for more details)
 
 * updated 019_PASSWORD_MANAGER (see README.md in that folder for more details)
+
+## 4-9-2024
+
+* added 020_FLASHCARDS (see README.md in that folder for more details)
+
+* updated the README file in 018_POMODORO
